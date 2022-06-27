@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact Us</title>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&amp;display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Neuton:wght@300&amp;family=Slabo+27px&amp;display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&amp;display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Secular+One&amp;display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles/contact.css"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" /><!--for the social media handles-->
+	
+</head> 
+<body>
+	<div class="container">
+		<header>
+			<div>
+				<div id="sidebar">
+					<div class="toggle-btn" onclick ="show()">
+						<div class="nav">
+							<div class="one"></div>
+							<div class="two"></div>
+							<div class="three"></div>
+						</div>
+					</div>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="index.html#aboutus">About Us</a></li>
+						<li><a href="team.html">Team</a></li>
+						<li><a href="index.html#dancedance">Projects</a></li>
+						<li><a href="merchandise.html">Merchandise</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+					</ul>
+				</div>
+				<script>
+					function show(){
+						document.getElementById('sidebar').classList.toggle('active');
+					}
+				</script>
+			</div>
+
+			<div class="logo">
+				<img src="images/logo.png" alt="Sapphire"/>
+				<a href="index.html">SAPPHIRE</a>
+			</div>
+
+			<div class="online">
+				<a href="audition.html" target="blank_">APPLY</a>
+			</div>
+		</header>
+		
+		<!--for title-->
+		<div class="title">
+			<h2>Contact Us</h2>
+		</div>
+
+		<!--for map-->
+		<div class="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.2667083820643!2d85.32385611506209!3d27.70905038279121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1908fae25a01%3A0x2ba6235654fa8969!2sKamal%20Marg%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1625481276190!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> 
+		</div>
+
+		<!--for the inquiry section-->
+		<div class="inquiry">
+			<div class="box1">
+				<h4>Terms and Conditions</h4><br/><br/>
+
+				<span style="color:red;">
+					Please read the terms and conditions before filling out the inquiry form. You are holding yourself liable for your information if you wish to send us your inquiry.<br/>
+					[Scroll down for more information.]
+				</span>
+				<br/><br/>
+				<p>
+					Sapphire respects your personal information and the “Act on Promotion of Information and Communications Network Utilization and Information Protection, Etc.”<br/><br/>
+					The project will inform you of the purpose of using the personal information you provide and how it is used and of the measures taken to protect your personal information through the privacy policy. The project shall notify you of any revision of the privacy policy through announcements in the website.<br/><br/>
+
+					The project collects the following personal information i.e name and email to facilitate including customer consultation in order to respond to service inquiries. However, inquiries about the personal life of the members is banned. If we get such messages, emails will be blocked from the person.  <br/><br/>
+
+					By submitting the inquiry, you'll also be signed up to our notices and newsletters so, Keep in check for the official schedule notices of our idols and events or fansigns. Furthermore, public dance covers schedule will also be shared through the newsletters.<br/><br/>
+
+					In case of unauthorized use of your personal information, the project shall immediately destroy the personal information.<br/><br/>
+
+					Please follow the guidelines of our project. Thank you!!
+				</p>
+			</div>
+
+			<div class="box2">
+				<div id="signUpError" style="color:red;"> </div>
+				<form action="#" method="POST" name="signup" enctype="multipart/form-data" onsubmit="return validateSignup()">
+					<h4> Inquiry </h4>
+					<table style="border:0; width:100%; padding:5px; border-spacing:5px">
+						<tr>
+							<td><label>Full Name</label></td>
+							<td><input type="Text" name="fullname" size="30" maxlength="50" placeholder="fullname" required="required" />
+							</td>
+						</tr>
+						<tr>
+							<td><label>Email Address</label></td>
+							<td><input type="email" name="email" placeholder="you@domain.com" size="30" maxlength="50" required /> </td>
+						</tr>
+						<tr>
+							<td>Inquiry Type</td>
+							<td style="padding:8px; justify-content: space-between;">
+								<input type="radio" name="inquiry" value="Business" checked="checked"/>Business&nbsp;&nbsp;
+								<input type="radio" name="inquiry" value="Advertisement"/>Advertisement&nbsp;&nbsp;
+								<input type="radio" name="inquiry" value="Music"/>Music&nbsp;&nbsp;
+								<input type="radio" name="inquiry" value="O"/>Other
+							</td>
+						</tr>
+
+						<tr>
+							<td>Country where you are from</td>
+							<td>
+								<select name="country" size="1" required>
+									<option value="">--Choose--</option>
+									<option value="NP">Nepal</option>
+									<option value="IN">India</option>
+									<option value="BA">Bangladesh</option>
+									<option value="MA">Maldives</option>
+									<option value="K">Korea</option>
+									<option value="J">Japan</option>
+								</select>
+							</td>
+						</tr>
+
+						<tr>
+							<td>Message</td>
+							<td>
+								<textarea rows="10" cols="40" name="message" required></textarea>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="submit" name="submit" value="Send" style="background-color: red;"/>
+							</td>
+							<td>
+								<input type="reset" name="reset" value="Clear" style="background-color: #197cbd;"/>
+							</td>
+						</tr>
+					</table> 
+				</form>
+			</div>
+			<script src="scripts/contact.js"></script>
+			<noscript>Your browser doesn't support JavaScript!</noscript>
+		</div>
+
+		<!--Footer-->
+		<div class="footer">
+			<div>
+				<h3>About our project</h3>
+				<p>Sapphire K-Cover Project is an initiative launched to revolutionalize the dance industry of Nepal breaking the stereotype and prejudices of the hallyu wave; further strengthening the Kpop fan community and giving them encouragement to keep doing the things they love irrespective of the culture or language of the music. Through public dance cover on busking areas throughout the Kathmandu, the project will be acting as a catalyst to promote K-pop and eventually build a K-pop community.</p>
+			</div>
+
+			<div>
+				<h3 style="margin-left: -25px">Site Map</h3>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="index.html#aboutus">ABOUT US</a></li>		
+					<li><a href="team.html">TEAM</a></li>
+					<li><a href="index.html#dancedance">PROJECTS</a></li>
+					<li><a href="merchandise.html">MERCHANDISE</a></li>
+					<li><a href="contact.html">CONTACT US</a></li>
+				</ul>
+			</div>
+			<script>
+				function show(){
+					document.getElementById('sidebar').classList.toggle('active');
+				}
+			</script>
+
+			<div>
+				<h3>Contact</h3>
+				<ul>
+					<li style="margin-top: 0.5em;"><a href="https://www.google.com/maps/place/Kamal+Marg,+Kathmandu+44600,+Nepal/@27.7090551,85.3238561,17z/data=!3m1!4b1!4m5!3m4!1s0x39eb1908fae25a01:0x2ba6235654fa8969!8m2!3d27.7090504!4d85.3260448?hl=en"><i class="fa fa-map-marker" aria-hidden="true">&nbsp; Kamal Pokhari, Kathmandu, Nepal</i></a></li>
+					<li style="margin-top: 2.5px; font-size: 18px"><i class="fa fa-phone" aria-hidden="true">&nbsp;441-2929, 980-1022446</i></li>
+					<li style="margin-top: 1em"><a href="mailto:sambasamyam@gmail.com"><i class="fa fa-envelope" aria-hidden="true">&nbsp;sapphireK_project@gmail.com</i></a></li>
+				</ul>
+
+				<h3 style="margin-top: 0.5em">Connect with Us</h3>
+				<div class="social-media">
+					<a href="https://www.facebook.com/Artbeat.Movie/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+					<a href="https://www.instagram.com/artbeat.movie/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+					<a href="https://twitter.com/artbeatfan?lang=en"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+					<a href="https://www.youtube.com/c/ArtbeatMovie/videos"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-bottom">
+			<div>
+				<p>
+					Copyright &copy; 2021 Sapphire Co.Ltd. All rights reserved.
+				</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

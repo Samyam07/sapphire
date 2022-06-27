@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Audition</title>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&amp;display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Neuton:wght@300&amp;family=Slabo+27px&amp;display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&amp;display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Secular+One&amp;display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles/audition.css"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" /><!--for the social media handles-->
+
+</head>
+<body>
+	<div class="container">
+		<header>
+			<div>
+				<div id="sidebar">
+					<div class="toggle-btn" onclick ="show()">
+						<div class="nav">
+							<div class="one"></div>
+							<div class="two"></div>
+							<div class="three"></div>
+						</div>
+					</div>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="index.html#aboutus">About Us</a></li>
+						<li><a href="team.html">Team</a></li>
+						<li><a href="index.html#dancedance">Projects</a></li>
+						<li><a href="merchandise.html">Merchandise</a></li>
+						<li><a href="contact.html" target="blank_">Contact Us</a></li>
+					</ul>
+				</div>
+				<script>
+					function show(){
+						document.getElementById('sidebar').classList.toggle('active');
+					}
+				</script>
+			</div>
+
+			<div class="logo">
+				<img src="images/logo.png" alt="Sapphire"/>
+				<a href="index.html">SAPPHIRE</a>
+			</div>
+
+			<div class="online">
+				<a href="audition.html" target="blank_">APPLY</a>
+			</div>
+		</header>
+
+		<!--for the audition page-->
+		<div class="sapphire">
+			<div class="left-box">
+				<h2>Sapphire Audition</h2>
+				<p>
+					Thank you for auditioning to be the member of Sapphire K-Cover Project. The dance videos will be judged by our mentors and the selected participants will be notified via email with additional information about the project. If there is no contact for more than 2 weeks, it can be considered as rejection. Please read the following rules and regulations to prevent mistakes in the audition form.
+				</p> 
+				<h4>Audition rules and regulations:</h4>
+
+				<ul>
+					<li>Photoshopped photos will not be accepted.</li>
+					<li>Edited video will not be accepted.</li>
+					<li>Full body should be visible in the video.</li>
+					<li>Video must be taken in landscape mode.</li>
+					<li>Dance must be done in any one of the BTS songs.</li>
+				</ul>
+			</div>
+
+			<div class="right-box">
+				<div id="signUpError" style="color:red;"></div>
+				<form action="#" method="POST" name="signup" enctype="multipart/form-data" onsubmit="return validateSignup()">
+					<table style="border:0; width:100%; padding:5px;border-spacing:30px">
+						<tr>
+							<td>
+								<label>Name</label>
+							</td>
+							<td>
+								<input type="Text" name="fullname" size="20" maxlength="50" placeholder="fullname" required="required" />
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<label>Email Address</label>
+							</td>
+							<td>
+								<input type="email" name="email" placeholder="you@domain.com" size="20" maxlength="50" required /> 
+							</td>
+						</tr>
+
+						<tr>
+							<td>Gender</td>
+							<td>
+								<input type="radio" name="gender" value="M" checked="checked"> Male
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								<input type="radio" name="gender" value="F"/> Female&nbsp;&nbsp;&nbsp;&nbsp;
+								<input type="radio" name="gender" value="O"/> Others
+							</td>
+						</tr>
+
+						<tr>
+							<td>DOB</td>
+							<td>
+								<input type="date" name="dob" required/>
+							</td>
+						</tr>
+
+						<tr>
+							<td>Nationality</td>
+							<td>
+								<select name="country" size="1" required>
+									<option value="">--Choose--</option>
+									<option value="NP">Nepal</option>
+									<option value="IN">India</option>
+									<option value="BA">Bangladesh</option>
+									<option value="MA">Maldives</option>
+									<option value="K">Korea</option>
+									<option value="J">Japan</option>
+								</select>
+							</td>
+						</tr>
+
+
+						<tr>
+							<td>Position</td>
+							<td>
+								<input type="checkbox" name="singer" value="singer" checked/> Main Dancer
+								&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="dancer"/> Lead Dancer
+							</td>
+						</tr>
+
+						<tr>
+							<td>Photo</td>
+							<td>
+								<input type="file" accept="image/*" name="photo" required/>
+							</td>
+						</tr>
+
+						<tr>
+							<td>Video</td>
+							<td>
+								<input type="file" accept="video/*" name="video" required/>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<input type="submit" name="submit" value="Submit" style="background-color: red; font-weight:bold;"/>
+							</td>
+							<td>	
+								<input type="reset" name="reset" value="Reset" style="background-color: #197cbd; font-weight:bold;"/>
+							</td>
+						</tr>
+					</table> 
+				</form>
+			</div>
+			<script src="scripts/contact.js"></script>
+			<noscript>Your browser doesn't support JavaScript!</noscript>
+		</div>
+
+		<!--Footer-->
+		<div class="footer">
+			<div>
+				<h3>About our project</h3>
+				<p>
+					Sapphire K-Cover Project is an initiative launched to revolutionalize the dance industry of Nepal breaking the stereotype and prejudices of the hallyu wave; further strengthening the Kpop fan community and giving them encouragement to keep doing the things they love irrespective of the culture or language of the music. Through public dance cover on busking areas throughout the Kathmandu, the project will be acting as a catalyst to promote K-pop and eventually build a K-pop community.
+				</p>
+			</div>
+
+			<div>
+				<h3 style="margin-left: -25px">Site Map</h3>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="index.html#aboutus">ABOUT US</a></li>		
+					<li><a href="team.html">TEAM</a></li>
+					<li><a href="index.html#dancedance">PROJECTS</a></li>
+					<li><a href="merchandise.html">MERCHANDISE</a></li>
+					<li><a href="contact.html" target="blank_">CONTACT US</a></li>
+				</ul>
+			</div>
+
+			<div>
+				<h3>Contact</h3>
+				<ul>
+					<li style="margin-top: 0.5em;"><a href="https://www.google.com/maps/place/Kamal+Marg,+Kathmandu+44600,+Nepal/@27.7090551,85.3238561,17z/data=!3m1!4b1!4m5!3m4!1s0x39eb1908fae25a01:0x2ba6235654fa8969!8m2!3d27.7090504!4d85.3260448?hl=en"><i class="fa fa-map-marker" aria-hidden="true">&nbsp; Kamal Pokhari, Kathmandu, Nepal</i></a></li>
+					<li style="margin-top: 2.5px; font-size: 18px"><i class="fa fa-phone" aria-hidden="true">&nbsp;441-2929, 980-1022446</i></li>
+					<li style="margin-top: 1em"><a href="mailto:sambasamyam@gmail.com"><i class="fa fa-envelope" aria-hidden="true">&nbsp;sapphireK_project@gmail.com</i></a></li>
+				</ul>
+
+				<h3 style="margin-top: 0.5em">Connect with Us</h3>
+				<div class="social-media">
+					<a href="https://www.facebook.com/Artbeat.Movie/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+					<a href="https://www.instagram.com/artbeat.movie/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+					<a href="https://twitter.com/artbeatfan?lang=en"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+					<a href="https://www.youtube.com/c/ArtbeatMovie/videos"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-bottom">
+			<div>
+				<p>
+					Copyright &copy; 2021 Sapphire Co.Ltd. All rights reserved.
+				</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
